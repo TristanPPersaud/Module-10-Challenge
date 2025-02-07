@@ -1,0 +1,16 @@
+{
+  "name": "module-challenge-10",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "inquirer": "^12.4.1",
+    "pg": "^8.13.1"
+  }
+}
