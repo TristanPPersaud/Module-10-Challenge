@@ -15,7 +15,7 @@ This project creates a SQL database that allows a user to view their current dep
 No installation necessary.
 
 ## Usage
-They can run the project with node src/app.js.
+They can run the project with node src/app.js. Demonstration Video : https://drive.google.com/file/d/1-MnW1D-SJqr7O3L1rxP-3IuwYt8JnH9b/view
 
 ## License
 MIT
