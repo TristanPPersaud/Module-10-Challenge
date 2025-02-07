@@ -1,4 +1,4 @@
-\c employee_db
+\c employee_db;
 
 INSERT INTO departments (name)
 VALUES 
