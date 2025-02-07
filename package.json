@@ -1,9 +1,10 @@
 {
   "name": "module-challenge-10",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "devDependencies": {
     "inquirer": "^12.4.1",
     "pg": "^8.13.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }

@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS employee_db; -- Drops employee_db database if it already exists. 
+DROP DATABASE IF EXISTS employee_db;
 
-CREATE DATABASE employee_db; -- Creates employee_db database. 
+CREATE DATABASE employee_db;
 
-\c employee_db; -- Uses employee_db; 
+\c employee_db;
 
 CREATE TABLE department ( -- Creates department table 
     id SERIAL PRIMARY KEY,
@@ -19,11 +19,11 @@ CREATE TABLE role (
 
 CREATE TABLE employees (
     id SERIAL PRIMARY KEY,
-    first_name VARCHAR(30),
-    last_name VARCHAR(30),
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
     role_id INTEGER,
     manager_id INTEGER,
-    FOREIGN KEY (manager_id) INTEGER REFERENCES employees(id) ON DELETE SET NULL, 
+    FOREIGN KEY (manager_id) REFERENCES employees(id) ON DELETE SET NULL, 
     FOREIGN KEY (role_id) REFERENCES role(id) ON DELETE SET NULL
 );
 

@@ -1,12 +1,12 @@
 \c employee_db;
 
-INSERT INTO departments (name)
+INSERT INTO department (name)
 VALUES 
-(Sales),
-(Quality Assurance),
-(Human Resources),
-(Accounting),
-(Administration);
+('Sales'),
+('Quality Assurance'),
+('Human Resources'),
+('Accounting'),
+('Administration');
 
 INSERT INTO role (title, salary, department_id)
 VALUES
@@ -16,10 +16,11 @@ VALUES
 ('Accountant', 50000, 4),
 ('Manager', 80000, 5);
 
-INSERT INTO employees (first_name, last_name, role_id)
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-('Jim', 'Halbpert', 1, 5),
-('Creed', 'Bratton', 2, 5),
-('Kelly', 'Kapoor', 3, 5),
-('Kevin', 'Malone', 4, 5),
-('Michael', 'Scott', 5, NULL);
+('Michael', 'Scott', 5, NULL),
+('Jim', 'Halbpert', 1, 1),
+('Creed', 'Bratton', 2, 1),
+('Kelly', 'Kapoor', 3, 1),
+('Kevin', 'Malone', 4, 1);
+
